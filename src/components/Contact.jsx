@@ -24,7 +24,7 @@ export default function Contact() {
     });
     axios.defaults.headers.post["Content-Type"] = "application/json";
     axios
-      .post("https://formsubmit.co/ajax/technicalrohit06@gmail.com", {
+      .post("https://formsubmit.co/el/behofu", {
         name: name,
         message: message,
         email: email,

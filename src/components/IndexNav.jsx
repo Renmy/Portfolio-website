@@ -1,4 +1,5 @@
 import { useState } from "react";
+import resume from "../content/ResumeRenmy.pdf"
 export default function IndexNav() {
   const [show, isShow] = useState(false);
 
@@ -68,13 +69,6 @@ export default function IndexNav() {
                   </a>
                   <a
                     onClick={() => isShow(false)}
-                    aria-label="projects"
-                    href="/projects"
-                  >
-                    Projects
-                  </a>
-                  <a
-                    onClick={() => isShow(false)}
                     aria-label="about"
                     href="/#about"
                   >
@@ -82,10 +76,10 @@ export default function IndexNav() {
                   </a>
                   <a
                     onClick={() => isShow(false)}
-                    aria-label="blogs"
-                    href="/blog"
+                    aria-label="projects"
+                    href="/projects"
                   >
-                    Blogs
+                    Projects
                   </a>
                   <a
                     onClick={() => isShow(false)}
@@ -94,7 +88,7 @@ export default function IndexNav() {
                   >
                     Contact
                   </a>
-                  <a>Download CV</a>
+                  <a href={resume}>Download CV</a>
                 </ul>
               </div>
             </div>

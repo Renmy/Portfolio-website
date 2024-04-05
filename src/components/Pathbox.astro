@@ -10,10 +10,12 @@ interface Props {
 const { title, company, date, description, image } = Astro.props;
 ---
 <section>
-    <div class="flex gap-4 h-full items-center  border-primary/10 border-[1px] bg-primary/10 bg-opacity-10 rounded-md ">
+    <div data-aos="fade-up" 
+         class="flex gap-4 h-full items-center  border-primary/10 border-[1px] bg-primary/10 bg-opacity-10 rounded-md w-80"
+        >
        <img src={image} alt="company logo" class="h-20 rounded-full ml-3 p-2"/>
        <div
-          data-aos="fade-up"
+          
           class="flex flex-col  py-2 pr-4 "
         >
           <h1 class="text-lg">{title}</h1>
