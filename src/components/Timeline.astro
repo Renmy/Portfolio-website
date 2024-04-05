@@ -1,5 +1,8 @@
 ---
-
+import Pathbox from "./Pathbox.astro"
+import prabadinlogo from "../assets/images/prabadinlogo.png"
+import desoftlogo from "../assets/images/desoftlogo.png"
+import cidcilogo from "../assets/images/cidcilogo.png"
 ---
 
 <section class="w-5/6 mx-auto mt-48">
@@ -7,18 +10,19 @@
     <h1
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
-      class="mb-8 font-extrabold text-center text-4xl text-transparent bg-clip-text bg-gradient-to-tr from-[#d7d7d7] to-[#616161]"
+      class="text-orange-400 mb-8 font-extrabold text-center text-4xl text-transparent bg-clip-text bg-gradient-to-tr from-[#d7d7d7] to-[#616161]"
     >
-      Current Journey
+      My Career Path
     </h1>
     <p
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
       class="text-gray-400 text-center text-lg font-semibold"
     >
-      This section tells about my life Journey in tech and education field
+    In this section you will learn about my journey in the field of web development.
     </p>
-    <div class="flex gap-2 justify-center mt-16">
+    <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="text-gray-400 text-center text-2xl font-semibold mt-8">Work Experience</h2>
+    <div class="flex gap-2 justify-center mt-8">
       <span class="w-1 bg-primary bg-opacity-5 rounded-md"></span>
       <div>
         <div class="text-primary font-semibold flex flex-col gap-y-8">
@@ -26,32 +30,35 @@
           <div class="flex gap-8 h-full items-center">
             <span
               data-aos="fade-right"
-              class="-ml-[16px] animate-ping absolute inline-flex w-3 h-3 rounded-full bg-sky-400 opacity-75"
+              class="-ml-[16px] -mt-[210px] animate-ping absolute inline-flex w-3 h-3 rounded-full bg-sky-400 opacity-75"
             ></span>
-            <div
-              data-aos="fade-up"
-              class="flex flex-col border-primary/10 border-[1px] bg-primary/10 py-2 w-72 bg-opacity-10 px-8"
-            >
-              <h1 class="text-lg">Full Stack Developer</h1>
-              <p class="text-[15px] text-gray-400">Intern</p>
-              <p>
-                At <a class="text-indigo-300" href="https://qbtrix.com/"
-                  >Qbtrix Innovations</a
-                >
-              </p>
-            </div>
-          </div>
-          <div data-aos="fade-up" class="flex gap-2">
-            <div class="flex flex-col border-primary/10 border-[1px] bg-primary py-2 w-72 bg-opacity-10 px-8">
-              <h1 class="text-lg">Web Developer</h1>
-              <p class="text-[15px] text-gray-400">Freelancer</p>
-              <p>
-                At <a class="text-indigo-300" href="/">Local Area</a>
-              </p>
+            <div class="flex flex-col gap-4">
+              <Pathbox 
+              title = "Front-End Developer",
+              date = "Dec. 2021 - Jun. 2023",
+              company = "Prabadin Corp.",
+              description = "",
+              image = {prabadinlogo.src}
+              />
+              <Pathbox 
+              title = "Web Developer",
+              date = "Oct. 2017 - Dec. 2021",
+              company = "Desoft SA.",
+              description = "",
+              image = {desoftlogo.src}
+              />
+              <Pathbox 
+              title = "Software Developer",
+              date = "Sep. 2011 - Oct. 2017",
+              company = "CIDCI.",
+              description = "",
+              image = {cidcilogo.src}
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
+    <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="text-gray-400 text-center text-2xl font-semibold mt-8">Education</h2>
   </div>
 </section>

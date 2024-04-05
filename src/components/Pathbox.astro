@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  company: string;
+  date: string;
+  description: string;
+  image: string;
+}
+
+const { title, company, date, description, image } = Astro.props;
+---
+<section>
+    <div class="flex gap-4 h-full items-center  border-primary/10 border-[1px] bg-primary/10 bg-opacity-10 rounded-md ">
+       <img src={image} alt="company logo" class="h-20 rounded-full ml-3 p-2"/>
+       <div
+          data-aos="fade-up"
+          class="flex flex-col  py-2 pr-4 "
+        >
+          <h1 class="text-lg">{title}</h1>
+          <p class="text-[15px] text-gray-400">{date}</p>
+          <p>
+            At <span class="text-indigo-300">{company}</span
+            >
+          </p>
+        </div>
+      </div>
+</section>
