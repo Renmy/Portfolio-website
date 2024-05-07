@@ -13,7 +13,7 @@ This is my personal portfolio website built using Tailwind CSS and Astro. It sho
 
   
 
-![Portfolio Website Preview](https://pbs.twimg.com/media/F6iOZw3WAAAtoqK?format=jpg&name=medium)
+![Portfolio Website Preview](https://github.com/Renmy/Portfolio-website/blob/astro/Screenshot%202024-05-07%20105414.png)
 
   
 
