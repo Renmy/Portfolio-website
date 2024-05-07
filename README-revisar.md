@@ -17,7 +17,7 @@ This is my personal portfolio website built using Tailwind CSS and Astro. It sho
 
   
 
-You can check out the live website [here](https://rohitk06.vercel.app).
+You can check out the live website [here](https://renmyedevportfolio.netlify.app/).
 
   
 
@@ -31,7 +31,7 @@ You can check out the live website [here](https://rohitk06.vercel.app).
 
 - Contact form
 
-- Blog Page
+
 
   
 
@@ -61,7 +61,7 @@ To run this project locally, follow these steps:
 
 ```bash
 
-git clone https://github.com/DevRohit06/Portfolio-website.git
+git clone https://github.com/Renmy/Portfolio-website.git
 
 ```
 
